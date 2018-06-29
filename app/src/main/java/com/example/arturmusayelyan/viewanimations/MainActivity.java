@@ -26,13 +26,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imageSunny = findViewById(R.id.image_sunny);
         startAnim = findViewById(R.id.start_anim_btn);
         stopAnim = findViewById(R.id.end_anim_btn);
-        alphaAnimation = AnimationUtils.loadAnimation(this, R.anim.toghether_anim);
+        alphaAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
         //alphaAnimateBtn.startAnimation(alphaAnimation);
         startAnim.setOnClickListener(this);
         stopAnim.setOnClickListener(this);
     }
 
     private void startAnim() {
+        //imageSunny.startAnimation(alphaAnimation);
         imageSunny.startAnimation(alphaAnimation);
     }
 
